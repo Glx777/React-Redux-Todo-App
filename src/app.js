@@ -7,7 +7,12 @@ import Header from './components/header'
 import CreateTodo from './components/CreateTodo'
 import Todos from './components/todos'
 
-let store = createStore(reducers)
+const persistedState = localStorage.getItem('state') ? JSON.parse(localStorage.getItem('state')) : {}
+let store = createStore(reducers, persistedState)
+
+store.subscribe(() => {
+  localStorage.setItem('state', JSON.stringify(store.getState()))
+})
 
 class App extends Component {
   render() {
