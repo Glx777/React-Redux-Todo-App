@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+.done {
+  text-decoration: line-through;
+}
+#header {
+  text-align: center;
+  background-color: #008E00;
+  width: 100%;
+}
+#header h1 {
+  color: #fff;
+  padding: 25px 0;
+  font-size: 36pt;
+}
+#createTODO {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+#createTODO button {
+  border: 0;
+  padding: 14px 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  background: #00DB00;
+  color: #fff;
+  font-size: 18pt;
+  margin-left: 10px;
+}
+#createTODO button:hover {
+  background: #00af00;
+}
+#createTODO input {
+  border: 3px solid #00DB00;
+  border-radius: 2px;
+  padding: 12px 15px;
+  font-size: 18pt;
+  width: 80%;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  font-size: 18pt;
+  padding: 10px 5px;
+  margin-bottom: 10px;
+  border: 1px solid #00DB00;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+li:hover {
+  border-color: #00af00;
+}
+#todos {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+#todoName {
+  font-size: 18pt;
+}
+#danger {
+  background: #FF0000;
+  padding: 8px 12px;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  font-size: 16pt;
+}
+#danger:hover {
+  background: #B20000;
+}
