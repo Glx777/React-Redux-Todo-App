@@ -4,7 +4,7 @@ import {addTask, editTask, deleteTask} from '../actions/'
 const tasksReducer = (state = [], action) => {
   switch(action.type) {
     case 'ADD_TASK':
-      state = [action.payload, ...state]
+      state = [...state, action.payload]
       break
     case 'DELETE_TASK':
       state = state.slice()
